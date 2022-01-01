@@ -1,0 +1,107 @@
+.single-project-info{
+    h2{
+        @include title-style;
+        margin-bottom: 0;
+    }
+    h1{
+        @include title-style;
+        text-align: center;
+        text-shadow: 6px 4px #ffffffbe;
+        padding-bottom: 2rem;
+        
+    }
+    p{
+        padding-top: 1rem;
+        font-size: 1.2rem;
+    }
+    .top-links{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+    .project-image{
+        margin-top: 4rem;
+        background-color: $project-info;
+        padding: 0 4rem;
+        border-radius: 10px;
+        width: 100%;
+    }
+    img{
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .design-grid{
+        img{
+            background-color: $project-info;
+        }
+    }
+    .dev-grid{
+        img{
+            background-color: $project-info;
+        }
+    }
+    
+    .page-links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .more-link{
+        width: 10rem;
+    }
+    .project-description{
+        h2{
+            padding: 0;
+        }
+    }
+    .tools-used{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        p{
+            @include title-style;
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                max-width: 9rem;
+                margin: 0 auto;
+                list-style: none;
+                border: 1px solid $accent-color;
+                padding: .5rem;
+                margin-top: 1rem;
+                background-color: white;
+                color: $main-colour;
+            }
+        }
+    }
+
+}
+
+@media (min-width: $tablet-wide){
+    .single-project-info{
+        p{
+            font-size: 1.2rem;
+        }
+        .project-description{
+            display: grid;
+            grid-gap: 2rem;;
+            grid-template-columns: 50% 50%;
+        }
+
+        .project-image{
+            h1{
+                padding-left: 6rem;
+                font-size: 4rem;
+            }
+            img{
+                padding-left: 20%;
+                width: 100%;
+            }
+        }
+
+    }
+}

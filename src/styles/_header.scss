@@ -1,0 +1,17 @@
+.header{
+    background-color: $accent-color;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+@media (min-width: $tablet-wide){
+   .header{
+       left: 0;
+       top: 0;
+       width: fit-content;
+        height: 100%;
+   }
+
+}

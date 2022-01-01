@@ -1,0 +1,29 @@
+.footer{
+    margin-bottom: 5rem;
+    padding-top: 3rem;
+    text-align: center;
+    color: $main-colour;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    a, .social-icon{
+        color: $main-colour;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+
+    }
+    
+    .social-icon:hover{
+        color: $accent-color;
+    }
+    a:hover{
+        color: $accent-color;
+    }
+}
+
+@media (min-width: $tablet){
+    .footer{
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+}

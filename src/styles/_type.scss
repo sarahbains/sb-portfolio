@@ -1,0 +1,40 @@
+//Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins&family=Work+Sans:ital@0;1&display=swap');
+@import url("https://use.typekit.net/mwg2kbp.css");
+
+
+//font-family: 'Montserrat', sans-serif;
+//font-family: 'Work Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;
+//font-family: all-round-gothic, sans-serif;
+
+
+// font-family: josefin-sans, sans-serif;
+// font-weight: 100;
+// font-style: normal;;
+
+h2, h1, a{
+    font-family: 'futura-pt',sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+h3, p, nav a, li  {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: $main-colour;
+}
+p{
+    line-height: 1.6;
+
+
+h1{
+    @include title-style
+}
+
+@media (min-width: $desktop){
+    p{
+        font-size: 1.6rem;
+    }
+}}

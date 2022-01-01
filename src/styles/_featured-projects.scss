@@ -1,0 +1,11 @@
+#projects{
+    h2{
+        @include title-style;
+    }
+    
+    .all-projects-link{
+        margin: 0 auto;
+        display: block;
+        width: 11rem;
+     }
+}

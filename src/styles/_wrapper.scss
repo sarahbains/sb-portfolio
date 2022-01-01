@@ -1,0 +1,21 @@
+.wrapper {
+    margin: 0 15% 0 15%;
+}
+
+
+@media (min-width: $tablet){
+    .wrapper {
+        margin: 0 20% 0 20%;
+    }
+}
+@media (min-width: $desktop){
+    .wrapper {
+        margin: 0 15% 0 20%;
+    }
+}
+
+@media (min-width: $desktop-wide){
+    .wrapper {
+        margin: 0 15% 0 20%;
+    }
+}

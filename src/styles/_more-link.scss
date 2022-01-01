@@ -1,0 +1,17 @@
+.more-link{
+    font-size: 1rem;
+    background-color: rgb(223, 223, 223);
+    padding: 10px;
+    border: $accent-color 1px solid;
+    text-align: center;
+    width: 7rem;
+    margin-top: 1rem;
+
+    transform: translateY(10px) translateX(10px);
+    transition: .5s ease-in-out;
+}
+.more-link:hover{
+    transform: translateY(-2px) translateX(-2px);
+    filter: drop-shadow(10px 10px #b96e69ab);
+    transition: .5s ease-in-out;
+}

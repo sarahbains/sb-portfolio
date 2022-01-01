@@ -1,0 +1,153 @@
+#home {
+    padding: 6rem 0 6rem 0;
+    height: 100vh;
+    position: relative;
+
+    a{
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        font-size: 4rem;
+        animation: bounce 2s infinite;
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+              transform: translateY(0);
+            }
+            40% {
+              transform: translateY(-30px);
+            }
+            60% {
+              transform: translateY(-15px);
+            }
+          }
+    }
+    h2{
+
+        font-size: 4rem;
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 400;
+        line-height: 4rem;
+        font-family: 'futura-pt',sans-serif;
+        font-weight: 800;
+        font-style: italic;
+    }
+    h3{
+        padding-top: 3rem;
+    }
+
+    .first-name{
+        color: $main-colour;
+    }
+    .last-name{
+        color:$main-colour;
+    }
+    .title{
+        color: $accent-color;
+        font-size: 2rem;
+    }
+    .first-name {
+        position: relative;
+        transform: translate(-50%, -50%);
+        display: block;
+        cursor: pointer;
+      }
+      
+      
+      .first-name::after  {
+        content: "SARAH";
+        position: absolute;
+        color: transparent;
+        top: 0px;
+        left: 0px;
+        transition: 1s;
+    }
+
+    
+    .first-name:hover:after {
+      top: -6px;
+      left: -6px;
+
+      background-image: repeating-linear-gradient(
+        135deg,
+        transparent 0,
+        transparent 2px,
+        white 2px,
+        white 4px
+      );
+      -webkit-background-clip: text;
+    } 
+
+      .last-name {
+        position: relative;
+        transform: translate(-50%, -50%);
+        display: block;
+        cursor: pointer;
+      }
+
+      
+      .last-name::after  {
+        content: "BAINS";
+        position: absolute;
+        color: transparent;
+        top: -3px;
+        left: -3px;
+
+        transition: 1s;
+      }
+      
+      .last-name:hover:after {
+        top: -6px;
+        left: -6px;
+        background-image: repeating-linear-gradient(
+          135deg,
+          transparent 0,
+          transparent 2px,
+          white 2px,
+          white 4px
+        );
+        -webkit-background-clip: text;
+      } 
+
+
+      
+}
+
+@media (min-width: $tablet){
+    #home{
+        h2{
+            font-size: 8rem;
+            line-height: 9rem;
+        }
+        .first-name:hover:before {
+            top: 10px;
+            left: 10px;
+        }
+        .first-name:hover:after {
+            top: -10px;
+            left: -10px;
+        }
+        .last-name:hover:before {
+            top: 10px;
+            left: 10px;
+        }
+        .last-name:hover:after {
+            top: -10px;
+            left: -10px;
+        }
+        .title{
+            text-align: right;
+
+        }
+    }
+
+      
+}
+@media (min-width: $desktop){
+    #home{
+        h2{
+            font-size: 10rem;
+        }
+    }
+}

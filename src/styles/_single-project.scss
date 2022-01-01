@@ -1,0 +1,45 @@
+.singleProject{
+    color: $main-colour;
+
+    margin: 1rem 0 1rem 0;
+    padding-top: 1rem;
+    h3{
+        font-size: 2rem;
+        margin-top: 1rem;
+        font-family: futura-pt,sans-serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+    h3:hover{
+        color: $accent-color;
+    }
+
+    img{
+        border-radius: 10px;
+        border: $accent-color 1px solid;
+    }
+
+    ul{
+
+        li{
+            list-style: none;
+            
+        }
+    }
+
+}
+
+@media (min-width: $desktop){
+    .singleProject{
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-gap: 4rem;
+
+        h3{
+            margin-top: 0;
+            font-size: 2rem;
+        }
+
+    }
+}
