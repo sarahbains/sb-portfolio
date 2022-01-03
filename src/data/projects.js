@@ -22,7 +22,7 @@ export const projects =  {
             title: 'Dalla Terra',
             slug: 'dalla-terra',
             github: 'https://github.com/sarahbains/dalla-terra',
-            liveurl: 'https://www.google.com/',
+            liveurl: 'https://dallaterra.bcitwebdeveloper.ca/',
             category: 'Featured Project',
             excerpt:'An e-commerce website for a rural, Italian farm built with a custom Wordpress theme.',
             tools: ['Wordpress', 'PHP', 'HTML', 'JavaScript', 'Sass', 'WooCommerce', 'GitHUb', 'Gulp'],
